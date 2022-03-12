@@ -1,13 +1,70 @@
-# VECA
+<div id="top"></div>
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <h3 align="center">VECA</h3>
+</div>
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#citation">Citation</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
 ![veca_overview](./docs/veca.png)
 
 VECA is currently preparing for the public release of Bayley-4 cognitive tasks, Unity packages, and additional system optimizations. Sorry for the delay.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-## Prerequisite
 
+
+### Built With
+
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
+* [Unity3D](https://unity.com/)
+* [python](https://www.python.org/)
+* [numpy](https://numpy.org/)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
 VECA environment requires two separate terminal sessions to properly execute it. One is to execute `Unity3D-based Environment` (*Environment* from now on), and the other is to execute the `agent algorithm` (*Algorithm* from now on). A session executing the environment should be executed on `Windows OS`. 
 
 Two sessions need not be on the same machine, since the communication between the environment and algorithm is socket-based. So the environment can run on Windows desktop, and the agent algorithm can run on linux cluster server. To sum up, the OS requirement is as follows:
@@ -30,7 +87,10 @@ or use `requirements.txt` file to install as follows:
 pip install -r requirements.txt
 ```
 
-## Installation
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+### Installation
 
 1. Clone this veca repository. Both the *environment* and *algorithm* session should clone it.
 ```
@@ -59,14 +119,17 @@ unzip disktower.zip
 cd ../
 ```
 
-### Other tasks 
+#### Other tasks 
 Unity application executables for tasks besides DiskTower are available in the following google drive links. Download and unzip it on a different directory. Modify an unity executable path in the `env_manager.py` script to use it.
 
 * KickTheBall task: [google drive link](https://drive.google.com/file/d/1jIxQyA2rS54-XH_AQxfWXRJqcYepMZ_T/view?usp=sharing)
 * MazeNav task: [google drive link](https://drive.google.com/file/d/1SSsQIklTFChWRvR14aRB9lTzMgMdPorv/view?usp=sharing)
 * BabyRun task: [google drive link](https://drive.google.com/file/d/1LZYNrQ8JUQEgT-rx_pTs_clwzeOHXqlI/view?usp=sharing)
+ 
 
-## Usage
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+#### How to Run
 
 The configuration of each script can be altered in two ways: modify a default config inside the script; or specify the optional argument on execution.
 
@@ -110,12 +173,23 @@ optional arguments:
   --num_envs NUM_ENVS  Number of parallel environments to execute
 ```
 
-## Acknowledgements
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This work was supported by Institute for Information & communications Technology Promotion(IITP) grant funded by the Korea government(MSIT) (No.2019-0-01371, Development of brain-inspired AI with human-like intelligence
+
+<!-- CONTACT -->
+## Contact
+
+Kwanyoung Park - [@Github](https://github.com/GGOSinon) - william202@snu.ac.kr
+Hyunseok Oh - [@Github](https://github.com/ohsai) - ohsai@snu.ac.kr
+
+<!-- Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name) -->
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 ## Citation
 
+<!-- ADD your bibtex -->
  If you find this work useful in your research, please cite
 ```
  @article{park2021veca,
@@ -125,4 +199,12 @@ This work was supported by Institute for Information & communications Technology
   year={2021}
 }
 ```
+<p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+
+This work was supported by Institute for Information & communications Technology Promotion(IITP) grant funded by the Korea government(MSIT) (No.2019-0-01371, Development of brain-inspired AI with human-like intelligence
+
+<p align="right">(<a href="#top">back to top</a>)</p>
